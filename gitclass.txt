@@ -1,0 +1,119 @@
+what is local repository
+what is remote repository
+what is working directory
+what is staging area
+what is commit id
+what is origin
+what is master
+what is push,pull
+what is tag
+how to create ,remove and push the tags
+how to clone the repo
+how to initilize the local repo
+how to view the logs
+how to create the branch
+how to switch to branch
+how to rename the branch
+how to merge the branch
+-------------------------------------------
+github level:
+_________________
+creating organization
+creating teams
+adding teams to the organization
+creaeting project
+create the repo
+add the rep to the teams
+how to  remove, backup the repo
+------------------------------------
+
+https://git-codecommit.ap-south-1.amazonaws.com/v1/repos/SampleGitRepo
+
+steps for creating remote repo [codecommit] from the cli:
+_____________________________________________________________
+
+step1: download security credentials for the user.
+     navigation: go to the top right handside[username]---select option "
+                  security credentials" from the drop down-My security credentials
+              ---sscroll down--click on create access key-download
+             accesskeys and secret accesskey.
+
+step2: go the commandline in linux
+            use followin command
+                     aws configure: eneter accesskey,secrentkeys,region and o/p
+
+how to create the remote repo using aws cli command:
+____________________________________________________
+aws codecommit create-repository --repository-name MyDemoRepo --repository-description "My demonstration repository"
+
+
+How to migrate the github to codecommit:
+___________________________________________
+step: clone the codecommit repo from aws-codecommit to local environment
+1) clone the github repo in to local environment
+2) push the cloned repo to codecommit
+
+--mirror
+Set up a mirror of the source repository.
+
+ This implies --bare. Compared to --bare, --mirror not only maps local branches of the source to local branches of the target, it maps all refs (including remote-tracking branches, notes etc.) and sets up a refspec configuration such that all these refs are overwritten by a git remote update in the target repository.
+
+
+how to remove a file from the commit local repo:
+__________________________________________________
+
+git rm filename
+
+q: how to get back the removed files from the commit area/
+
+what is .gitignore:
+______________________
+
+
+gitignore - used to Specifies intentionally untracked files to ignore
+
+git fetch:
+______________
+
+>is command used to download files from the remote  repo to local
+> fetch cant merge these files in to local repo..
+> used to download the files from the remote branches and  cant
+         merge in to current local branch,
+
+=======================================================
+
+git init
+git add
+git commit
+git log
+git shortlog
+git clone
+git clean
+git rm --cached
+git push 
+git pull
+git remote add origin
+git remote remove
+git branch
+git checkout
+git merge
+git tag
+git rm
+git mv
+git restore
+git show
+
+
+
+
+
+
+
+
+
+
+               
+
+
+
+
